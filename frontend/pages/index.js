@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Head from "next/head";
+import React, { useState } from "react";
 
 export default function Home() {
   const [shortUrl, setShortUrl] = useState("");
@@ -11,7 +10,9 @@ export default function Home() {
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ shortUrl, longUrl }),
     }).then((res) => {
-      alert("Berhasil!");
+      alert(
+        `http://localhost:3000/api/${shortUrl} berhasil copy ke clipboard!`
+      );
       setShortUrl("");
       setLongUrl("");
     });
