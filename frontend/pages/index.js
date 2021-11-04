@@ -19,8 +19,20 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="font-bold text-center">EASY URL SHORTENER</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 relative">
+      <h1 className="font-bold text-center">DEFINETELY NOT RISTEK.LINK 👋</h1>
+      <em className="absolute top-5 left-2 rotate-2 text-blue-500">
+        Oh wow, best tool of the century
+      </em>
+      <em className="absolute top-5 right-2 -rotate-3 text-blue-500">
+        10/10 would reach 1 million in 3 months
+      </em>
+      <em className="absolute bottom-5 right-2 rotate-3 text-blue-500">
+        No paid? No capitalism.
+      </em>
+      <em className="absolute bottom-10 left-3 rotate-3 text-blue-500">
+        13/10 would use again
+      </em>
       <input
         value={longUrl}
         onChange={(e) => setLongUrl(e.target.value)}
